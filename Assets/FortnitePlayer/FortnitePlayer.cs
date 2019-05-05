@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnyGamePlayer : MonoBehaviour
+public class AnyGamePlayer
 {
     public string Name;
     public int Health;
     public int Armor;
+
+    public override string ToString()
+    {
+        return "Name: "+Name+",Health: "+Health+",Armor: "+Armor;
+    }
 }
 public class Players
 {

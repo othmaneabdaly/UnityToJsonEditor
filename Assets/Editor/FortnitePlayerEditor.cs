@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(AnyGamePlayer))]
-public class AnyGamePlayerEditor : Editor
+
+public class AnyGamePlayerEditor
 {
     public override void OnInspectorGUI()
     {
