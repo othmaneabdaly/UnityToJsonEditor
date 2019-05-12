@@ -11,6 +11,14 @@ public class PlayerModel
 public class Players
 {
     public Dictionary<string, PlayerModel> PlayersList;
+    public void CreatePlayerConf(List<PlayerModel> value)
+    {
+        foreach(PlayerModel p in value)
+        {
+            PlayersList.Add(p.Name, p);
+        }
+    }
+
     public PlayerModel GetPlayerByName(string name)
     {
         foreach(KeyValuePair < string, PlayerModel> player in PlayersList)
